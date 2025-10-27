@@ -38,15 +38,26 @@ public class TP0_calculette {
              
               System.out.print("Please enter the first number: ");
               operande1 = sc.nextInt();
-         }
+         
               System.out.print("Please enter the second number: ");
               operande2 = sc.nextInt();
               
               if (operateur == 1) {
                   resultat = operande1 + operande2;
-               } else if (operateur == 2) {
+              } else if (operateur == 2) {
                    resultat = operande1 - operande2;
+              } else if (operateur == 3){ 
+                  resultat = operande1 * operande2; 
+              } else if (operateur == 4) { 
+                  resultat = operande1 / operande2;  
+              } else if (operateur == 5) { 
+                  resultat = operande1 % operande2;  
+              }
                 
-    }
+              System.out.println("The result is : " + resultat);
+         }
     
+         sc.close();
+    
+        }
 }
