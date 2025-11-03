@@ -4,6 +4,8 @@
  */
 package tp1_convertisseur_hetmaniak;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Titouan HETMANIAK
