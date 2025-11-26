@@ -32,8 +32,8 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
             "Atlantique", "Indien", "Arctique", "Pacifique", 4));
 
     questions.add(new Question(
-            "Combien font 7 × 8 ?",
-            "54", "56", "64", "48", 2));
+            "Combien font 7 × 56 ?",
+            "372", "392", "398", "374", 2));
 
     questions.add(new Question(
             "Qui a inventé Java ?",
@@ -72,11 +72,11 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
     Question q = questions.get(indexQuestionCourante);
 
     if (choix == q.getIndexBonneReponse()) {
-        lblFeedback.setText("Bonne réponse !");
+        lblFeedback.setText("Bonne réponse, continue !");
         score++;
         lblScore.setText("Score : " + score);
     } else {
-        lblFeedback.setText("Mauvaise réponse...");
+        lblFeedback.setText("Mauvaise réponse, t'es nul !");
     }
 
     btnRep1.setEnabled(false);
@@ -105,11 +105,13 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
         lblScore = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 0, 255));
 
         lblQuestion.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblQuestion.setText("jLabel1");
 
         btnRep1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnRep1.setForeground(new java.awt.Color(51, 0, 255));
         btnRep1.setText("jButton1");
         btnRep1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +120,7 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
         });
 
         btnRep2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnRep2.setForeground(new java.awt.Color(51, 0, 255));
         btnRep2.setText("jButton1");
         btnRep2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +129,7 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
         });
 
         btnRep3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnRep3.setForeground(new java.awt.Color(51, 0, 255));
         btnRep3.setText("jButton1");
         btnRep3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +138,7 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
         });
 
         btnRep4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        btnRep4.setForeground(new java.awt.Color(51, 0, 255));
         btnRep4.setText("jButton1");
         btnRep4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -142,9 +147,11 @@ public class FENETRE_QUIZ extends javax.swing.JFrame {
         });
 
         lblFeedback.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblFeedback.setForeground(new java.awt.Color(255, 51, 153));
         lblFeedback.setText("jLabel1");
 
         btnSuivant.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        btnSuivant.setForeground(new java.awt.Color(0, 204, 51));
         btnSuivant.setText("SUIVANT");
         btnSuivant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
